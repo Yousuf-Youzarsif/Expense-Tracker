@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  display: flex;
+  justify-content: center;
+  background-color: rgba(247, 248, 249, 0.893);
+  transition: 0.5s ease-in;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 10px;
+}
+.expenseSection {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 100%;
+  padding: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(2, 2, 2, 0.501);
+  /* box-shadow: 0px 0px 10px rgba(238, 238, 238, 0.501); */
+}
+.FSA {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: rgb(56, 55, 55);
+}
+.expenseSub {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+  margin-top: 5px;
+}
+.addNew {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(56, 55, 55);
+}
+.sameInput {
+  outline: none;
+  border: none;
+  border: 1px solid grey;
+  padding: 15px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+label {
+  font-size: 16px;
+  font-weight: 600;
+  /* color: rgb(56, 55, 55); */
+}
+.expenssAllinput {
+  display: flex;
+  gap: 20px;
+}
+.expenseInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.addNewExp {
+  padding: 15px;
+  background-color: rgb(59, 130, 245);
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.addNewExp:hover {
+  background-color: rgb(40, 102, 202);
+}
+
+.yourExpense {
+  align-self: center;
+  font-size: 18px;
+  font-weight: 600;
+  /* color: rgb(56, 55, 55); */
+}
+.nextCotogry {
+  display: flex;
+  gap: 20px;
+}
+.categorySub {
+  background-color: rgba(128, 128, 128, 0.115);
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.categorySub:hover {
+  background-color: rgba(43, 41, 41, 0.115);
+}
+hr {
+  margin: 20px 0px;
+  border: 1px solid rgb(239, 233, 233);
+}
+.secondSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  background-color: rgba(128, 128, 128, 0.042);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.496);
+  border-top: 1px solid rgba(128, 128, 128, 0.496);
+}
+.categorySub.active {
+  color: rgba(255, 255, 255, 0.836);
+  background-color: rgba(153, 153, 243, 0.59);
+}
+.fa-sack-dollar {
+  color: rgb(124, 99, 7);
+  margin-right: 10px;
+}
+.listItems {
+  border: 1px solid rgb(221, 209, 209);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: rgba(128, 128, 128, 0.042);
+}
+.itemAction {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.categoryShow {
+  color: rgba(19, 19, 137, 0.836);
+  background-color: rgba(215, 215, 218, 0.59);
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.expPrice {
+  font-size: 17px;
+}
+.fa-trash {
+  font-size: 18px;
+  cursor: pointer;
+  color: rgb(93, 92, 92);
+}
+.fa-trash:hover {
+  /* color: rgb(43, 42, 42); */
+  color: red;
+  scale: 1.1;
+  transition: 0.4s;
+}
+.totalExpenseSection {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.totalExpense {
+  font-size: 20px;
+  font-weight: 600;
+}
+.totalExpenseAmt {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(19, 159, 19);
+}
+select {
+  border: red;
+  /* background-color: #f0f0f0; */
+  /* border: 1px solid #ccc; */
+  padding: 8px;
+  width: 200px;
+}
+.fa-solid.fa-sun {
+  font-size: 30px;
+  position: absolute;
+  top: 40px;
+  right: 52px;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+.fa-solid.fa-moon {
+  font-size: 25px;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+  /* background-color: rgb(245, 243, 243); */
+  padding: 12px 15px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgb(199, 199, 199);
+  display: block;
+}
+
+/* night mode start */
+body.active {
+  background-color: black;
+  color: white;
+}
+.expenseSection.active {
+  background-color: rgb(22, 21, 21);
+}
+.FSA.active {
+  color: white;
+}
+.addNew.active {
+  color: white;
+}
+
+/* .expenseName.active {
+  color: white;
+} */
+.emptyExpense p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  padding: 10px 0px 0px 0px;
+  font-weight: 500;
+}
