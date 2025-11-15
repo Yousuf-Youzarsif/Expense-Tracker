@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8fcff5aa83.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <i class="fa-solid fa-sun"></i>
+    <i class="fa-solid fa-moon"></i>
+    <div class="container">
+      <h1 class="FSA">💰FSA Expense Tracker</h1>
+      <div class="expenseSection">
+        <div class="expenseInputs active">
+          <h2 class="addNew">Add New Expense</h2>
+          <div class="expenssAllinput">
+            <div class="expenseSub">
+              <label for="expenseName active">Expense Name</label>
+              <input
+                type="text"
+                name=""
+                id="expenseName"
+                class="sameInput"
+                placeholder="Enter expense name"
+              />
+            </div>
+            <div class="expenseSub">
+              <label for="expenseNumber">Amount</label>
+              <input
+                type="number"
+                name=""
+                id="expenseNumber"
+                class="sameInput"
+                placeholder="Enter amount"
+              />
+            </div>
+            <div class="expenseSub">
+              <label for="expenseCategory">Category</label>
+              <select class="sameInput selectInput">
+                <option value="category" selected disabled>
+                  Select category
+                </option>
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Bills">Bills</option>
+              </select>
+            </div>
+          </div>
+          <button class="addNewExp">Add Expense</button>
+        </div>
+        <hr />
+        <div class="secondSection">
+          <p class="yourExpense">Your Expenses</p>
+          <div class="nextCotogry">
+            <p class="categorySub All">All</p>
+            <p class="categorySub food">Food</p>
+            <p class="categorySub travel">Travel</p>
+            <p class="categorySub bills">Bills</p>
+          </div>
+        </div>
+        <div class="emptyExpense"><p>There is no Expenses</p></div>
+        <div class="listItemContain">
+          <!-- <div class="listItems">
+            <p class="lunchTeam">Lunch with Team</p>
+            <div class="itemAction">
+              <p class="categoryShow">Food</p>
+              <p class="expPrice">$25.50</p>
+              <i class="fa-solid fa-trash"></i>
+            </div>
+          </div> -->
+        </div>
+        <hr />
+        <section class="totalExpenseSection">
+          <p class="totalExpense">Total Expense:</p>
+          <p class="totalExpenseAmt">₹ <span class="expenseAmt">0</span></p>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
